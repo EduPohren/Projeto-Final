@@ -1,0 +1,13 @@
+#carrinhoDeCompras:empty::before {
+    content: 'Nenhum item adicionado ao carrinho';
+    padding: 13px;
+    color: gray;
+    font-size: 14px;
+}
+#listaDeProdutos {
+    background: #f7f7f7;
+    width: 35%;
+    height: 35%;
+    align-items: center;
+    text-align: center;
+}

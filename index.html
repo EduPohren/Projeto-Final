@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="card my-5">
+            <div class="card-header text-center">
+                Itens no carrinho
+            </div>
+            <ul id="carrinhoDeCompras" class="list-group list-group-flush"></ul>
+            <div class="card-footer text-end">
+                Total R$ <label id="totalDoCarrinho">0.00</label>
+            </div>
+        </div>
+    
+        <div id="listaDeProdutos" class="d-flexbox justify-content-around p-5">
+            <!-- Jordan 4 -->
+            <div class="card">
+                <img src="image 1.png" class="card-img-top" alt="Air Jordan 4">
+                <div class="card-body">
+                  <h5 class="card-title">R$ 699,90</h5>
+                  <p class="card-text">Air Jordan 4</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="Air Jordan 4" 
+                  data-preco-do-produto="699.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div>
+            <!-- Yeezy -->
+            <div class="card">
+                <img src="image 2.png" class="card-img-top" alt="Yeezy 350 V2">
+                <div class="card-body">
+                  <h5 class="card-title">R$ 1499,90</h5>
+                  <p class="card-text">Yeezy 350 V2</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="Yeezy 350 V2" 
+                  data-preco-do-produto="1499.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div>
+
+            <!-- Yeezy Zebra-->
+            
+            <div class="card">
+                <img src="image 3.png" class="card-img-top" alt="Yeezy 350 V2">
+                <div class="card-body border-top">
+                  <h5 class="card-title">R$ 1499,90</h5>
+                  <p class="card-text">Yeezy 350 V2 Zebra</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="Yeezy 350 V2 Zebra" 
+                  data-preco-do-produto="1499.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div>
+
+            <!-- All Stars -->
+            <div class="card">
+                <img src="image 4.png" class="card-img-top" alt="Yeezy 350 V2">
+                <div class="card-body border-top">
+                  <h5 class="card-title">R$ 299,90</h5>
+                  <p class="card-text">All Stars</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="All Stars" 
+                  data-preco-do-produto="299.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div>
+
+            <!-- Air Max Impact 2 -->
+            <div class="card">
+                <img src="image 5.png" class="card-img-top" alt="Yeezy 350 V2">
+                <div class="card-body border-top">
+                  <h5 class="card-title">R$ 499,90</h5>
+                  <p class="card-text">Air Max Impact 2</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="Air Max Impact 2" 
+                  data-preco-do-produto="499.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div>
+
+            <!-- Air Maz Impact 2 Blue -->
+            <div class="card">
+                <img src="image 6.png" class="card-img-top" alt="Yeezy 350 V2">
+                <div class="card-body border-top">
+                  <h5 class="card-title">R$ 449,90</h5>
+                  <p class="card-text">Air Maz Impact 2 Blue</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="Air Maz Impact 2 Blue" 
+                  data-preco-do-produto="449.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div>
+
+            <!-- New Balance -->
+            <div class="card">
+                <img src="image 7.png" class="card-img-top" alt="Yeezy 350 V2">
+                <div class="card-body border-top">
+                  <h5 class="card-title">R$ 699,90</h5>
+                  <p class="card-text">New Balance 12V</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="New Balance 12V" 
+                  data-preco-do-produto="699.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div>
+
+            <!-- Jordan 1 -->
+            <div class="card">
+                <img src="image 8.png" class="card-img-top" alt="Yeezy 350 V2">
+                <div class="card-body border-top">
+                  <h5 class="card-title">R$ 999,90</h5>
+                  <p class="card-text">Jordan 1</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="Jordan 1" 
+                  data-preco-do-produto="999.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div>
+
+            <!-- Thunderbolt -->
+            <div class="card">
+                <img src="image 9.png" class="card-img-top" alt="Yeezy 350 V2">
+                <div class="card-body border-top">
+                  <h5 class="card-title">R$ 399,90</h5>
+                  <p class="card-text">Thunderbolt</p>
+                  <a class="btn btn-primary" 
+                  data-nome-do-produto="Thunderbolt" 
+                  data-preco-do-produto="399.90"
+                  
+                  onclick="adicionarAoCarrinho(event)">
+
+                  Adicionar ao Carrinho</a>
+                </div>
+              </div> 
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
