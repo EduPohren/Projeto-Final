@@ -5,9 +5,15 @@
     font-size: 14px;
 }
 #listaDeProdutos {
-    background: #f7f7f7;
     width: 35%;
     height: 35%;
-    align-items: center;
+
+    margin: auto;
+    
+    
     text-align: center;
+   
+    display: grid;
+    grid-template-columns: 50vh 50vh 50vh;
+    gap: 65px;
 }

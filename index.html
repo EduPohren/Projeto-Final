@@ -16,9 +16,18 @@
                 Itens no carrinho
             </div>
             <ul id="carrinhoDeCompras" class="list-group list-group-flush"></ul>
-            <div class="card-footer text-end">
+            <div class="card-footer d-flex flex-row justify-content-between align-items-center">
+              <div>
+                Carteira atual: R$ <label id="totalDaCarteira" data-carteira="2000.00">2000.00</label>
+              </div>
+              <div>
                 Total R$ <label id="totalDoCarrinho">0.00</label>
+                <a class="btn btn-primary"   onclick="calcPagamento(event)">
+                  Finalizar a Compra
+                </a>
+              </div>
             </div>
+            
         </div>
     
         <div id="listaDeProdutos" class="d-flexbox justify-content-around p-5">
