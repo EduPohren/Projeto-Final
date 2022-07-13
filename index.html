@@ -9,9 +9,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> 
+    
+      <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid">    
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ">
+              <li id="TelaHome" class="nav-item">
+                <a class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li id="TelaCarrinho" class="nav-item">
+                <a class="nav-link">Carrinho</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Sobre</a>
+              </li>
+              <li id="TelaCarrinho2" class="nav-item position-absolute end-0 me-4">
+                <a class="nav-link">
+                  Itens no Carrinho: <label id="Unidades" data-qtd="0">0</label>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- NAVBAR ACIMA-->
+
     <main class="container">
-        <div class="card my-5">
+        <div class="card my-5" id="Carrinho">
             <div class="card-header text-center">
                 Itens no carrinho
             </div>
@@ -29,7 +55,19 @@
             </div>
             
         </div>
-    
+        
+
+        <!--Carrinho Acima-->
+
+        <div id="icon">
+          <img id="img01" src="logoIMG_00149.jpg">
+          <video id="logovideo" autoplay="#logovideo">
+            <source src="Logo.mp4">
+          </video>
+        </div>
+
+        <!--Produtos Abaixo-->
+
         <div id="listaDeProdutos" class="d-flexbox justify-content-around p-5">
             <!-- Jordan 4 -->
             <div class="card">
